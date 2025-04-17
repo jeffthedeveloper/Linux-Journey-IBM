@@ -1,0 +1,44 @@
+[MUSIC] Welcome to filters, pipes and variables. After watching this video, you will
+be able to describe and use pipes and filters and explain and
+set shell and environment variables. Filters or shell commands or programs which take their input from
+standard input normally the keyboard and return their output to standard output,
+which is normally the terminal. We can think of a filter as a transformer, a program that transforms
+input data into output data. There are many examples, including wc,
+cat, more head, sort, grep and so on. The value of filters is that
+they can be chained together which brings us to the pipe command. The pipe command,
+denoted by a vertical slash, immensely extends
+the functionality of shells. It allows you to chain together
+sequences of filter commands. The use pattern looks
+like this accordingly, the output of command 1 becomes
+the input of command 2, and so on. Not surprisingly,
+pipe is short for pipeline. For example, you can pipe the output of ls
+to the sort command with the -r option, which results in a reverse sorted
+list of directory contents. Shell variables are variables that
+are limited in scope to the shell in which they were created. Accordingly, shells cannot see
+each other's shell variables. You can invoke the set command
+to list all variables and their definitions that
+are visible to the current shell. Because it also lists a lot of subsequent
+information, you can pipe the output to head in order to show just
+the first four variable definitions. To define a new shell variable, simply use the equal sign to assign
+a value to your chosen variable name. Notice that there are no
+spaces around the equal sign. As an example, let's define
+a shell variable called Greetings, which stores the string hello. To see the contents of
+the new variable Greetings, use the dollar sign to access its value,
+then echo it back. You can display multiple
+variables as well. Let's define another variable
+audience with the value world, then echoing both variables
+back returns Hello World. To clear a variable,
+use the unset command. For example, unset AUDIENCE
+deletes the variable AUDIENCE. Environmental variables
+are just like shell variables, except they have extended scope. They persist in any child processes
+spawned by the shell in which they originate. You can extend any shell variable to
+an environment variable by applying the export command to it. For example, export GREETINGS makes
+Greetings an environment variable. To list all environment variables,
+use the env command. Let's check whether Greetings was exported
+as an environment variable by piping the output of env to grep and filtering
+the results using the pattern GREE. Indeed, Greetings is now
+an environment variable. In this video, you learned that
+filters are shell commands. The pipe operator ' | ' allows
+you to chain filter commands. Shell variables can be assigned
+values with '=' and listed using set. Environment variables are shell
+variables with scope extended to all child processes of the shell. [MUSIC]

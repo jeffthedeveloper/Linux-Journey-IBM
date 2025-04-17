@@ -1,0 +1,54 @@
+Welcome to “Useful Commands for Wrangling
+Text Files.” In this video, you will learn how to apply
+commands that operate on files to: Create a line-by-line sorted view. Create a view that excludes repeated lines. Extract lines containing a specified pattern. Extract slices and fields from each line. And merge lines from multiple files. The “sort” command sorts the lines of
+a file alpha-numerically and prints the sorted result to standard output. By entering "sort pets dot text," you get
+back the alphabetically sorted output, with "cat" repeated five times and "dog" repeated
+twice. If you enter "sort minus R pets dot text,"
+you get back the lines sorted in the reverse order, with the "dog" lines appearing before the
+"cat" lines. If you have repeated lines in your file, you
+can use the "unique" command to filter out the repeated lines. Recall the contents of ”pets dot text”
+by entering "cat pets dot text." By entering "unique pets dot txt," you get
+back "cat,” “dog,” and “cat." Note that the “unique” command only removes
+duplicated lines if they are consecutive. Thus, the word “cat” appears twice here
+because “cat” appears before and after the two “dog” lines, interrupting
+the consecutive sequence. The “grep” command, which stands for “global
+regular expression print”, returns lines of a file matching a specified
+pattern, such as a regular expression. Suppose you have a list of famous people's
+names stored in a file, which you can view by entering "cat people
+dot text." You can use grep to find all lines in “people
+dot txt” that contain the consecutive characters “c h.” To do this, you give grep the matching term,
+“c h,” followed by the filename. The output returns two results, Dennis Ritchie,
+and Erwin Schrodinger, containing a lower-case match to “c h.” Performing the same operation, but this time
+with the “minus i” option, returns an extra result, Charles Babbage,
+which has an upper-case C. The “minus i” option expands the pattern
+search by making it case-insensitive. You can also use the “cut” command to
+extract specific sections from each line in your file. Here you see the list of famous names again,
+such as Alan Turing and Charles Babbage. You can use the cut command to extract the
+second to ninth characters from every line by entering “cut minus C 2 dash 9 people
+dot text.” You can see from the output that “Alan Turing”
+is returned as “Lan Turi.” Let’s look at a more practical example for
+using cut with text files. Suppose you want to extract only the last
+name of each person on your list. You know that each line of your list is made
+up of two fields: the person’s first and last names. A space separates these fields. Here, you’re cutting to extract the second
+field from each line. Using the “minus d quote space quote”
+option, you can specify that the field delimiter, or the character that indicates the break
+between fields, is a space. Then, use the “minus f two” option to
+return the second field from each line. This will return the last name of each person
+from the list. Additionally, you can use the “paste”
+command to merge lines from multiple files. Imagine you are given the following three
+text files, all with the same number of lines: a text file called “first dot text” containing
+a list of people’s first names. a complementary text file called “last dot
+text,” which contains the last names of the same
+people, and a third text file, called “Y O B dot
+text,” which lists each person's year of birth. You can view these files as a table by entering
+“paste first.txt last.txt yob.txt.” Notice that the three columns are evenly aligned
+because Paste uses a tab as the default delimiter. Using this table, you can see, for example,
+that Charles Babbage was born in 1791. You can specify a delimiter other than Tab
+using the "minus D" option with the “paste” command. For example, you can use a comma as a delimiter
+by entering “paste minus D" with a comma surrounded by double quotes, together with the "first," "last," and "Y
+O B" text files. As you can see, this will create a table combining
+all three files with a comma between each field, such as "Dennis comma Ritchie comma 1941". In this video, you learned how to: View the lines of a file alpha-numerically
+using sort, Remove repeated lines from your view with
+unique, Get the lines of a file that match your desired
+criteria using grep, Extract slices and fields from lines with
+cut, Merge lines from different files using paste.

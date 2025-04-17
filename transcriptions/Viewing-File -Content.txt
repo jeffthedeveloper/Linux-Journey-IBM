@@ -1,0 +1,53 @@
+Welcome to viewing file content. In this video, you
+will learn how to apply commands
+that operate on files to view the
+contents of a file in useful ways and
+determine line, word, and character counts. There are several
+useful commands for viewing file content. To begin with, you can
+use the cat command to print the entire file
+to standard output. Suppose your current
+directory contains a single file
+called numbers.txt, which you can see by
+entering the LS command. To print the contents of this
+file to standard output, you can type cat numbers.txt, which produces the
+output shown here consisting of the numbers
+89 through to 99. You can see that
+the output takes up the entire terminal window. The file is much longer than the twelve
+lines you see here. For this reason, you might not always want to use
+cat to view contents. Thankfully, there are
+alternative commands for cases such as these. The more command
+allows you to view a file's content in a
+page by page format. By entering more numbers.txt, you see the numbers 0-8
+on page 1 as shown. By page we just mean the
+current terminal window. If you expand your terminal
+window vertically, you also increase the page size. When you click the space bar, you will see the next page which displays the numbers 9-17. Entering Q quits
+the more program and returns you to
+the command prompt. You can use the head
+command to print the first 10 lines of your file. Entering head
+numbers.txt returns the first 10 lines or the
+numbers 0-9 as shown. You can specify the number
+of lines you would like head to return using
+the -n option. By entering head, -n 3 numbers.txt, you get back the
+first three lines of numbers.txt as 0, 1, 2. The tail command
+is used to print the last 10 lines of a file. Entering tail
+numbers.txt returns the last 10 lines
+of numbers.txt, namely the numbers from 90-99. Just like with the head command, you can use the -n option to
+change the number of lines returned by entering
+tail -n, 3 numbers.txt. You get back the last three
+lines of numbers.txt 97, 98, and 99. You can use the WC command to count the number
+of characters, words, or lines in your file. Imagine you have a
+file called pets.txt. Entering cat pets.txt
+shows that the file contains the word cat or
+the word dog on each line. By entering WC pets.txt, you get the result
+7 7 28 pets.txt. Which means that your
+file contains 7 lines, 7 words, and 28 characters. But 7 times 3 is 21 so why
+does WC see 28 characters? Because it also counts
+new line characters. You can't see them there, but there are seven
+new line characters one of which represents
+end of file. To view only line count, you can use the -l option
+which returns 7 pets.txt. Similarly to view
+only word count, you can use the -w option, and to view only
+character count, you can use the -c option. In this video, you learned how to apply the cat, more, head, and tail commands to
+view file contents in multiple ways and
+determine the line, word, and character count
+of a file using WC.

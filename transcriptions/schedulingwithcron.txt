@@ -1,0 +1,43 @@
+Welcome to Scheduling Jobs Using Cron.
+After watching this video, you will be able to: Schedule cron jobs with crontab. Describe
+the cron syntax. Apply and remove cron jobs. Whether you are a system administrator or
+a data engineer or even a developer, there may be times when you want to schedule
+certain jobs to run automatically at certain times. For example, you may want to schedule
+a load script to run every day at midnight, and a backup script
+to run every Sunday at 2 AM. The cron utility on Linux and Unix-like
+operating systems allows you to do just that. Cron is the general name of the tool that
+runs scheduled jobs consisting of shell commands or shell scripts. Crond is the daemon or
+service that interprets “crontab files” every minute and submits
+the corresponding jobs to cron at scheduled times. A crontab, short for “cron table,”
+is a file containing jobs and schedule data.
+Crontab is also a command that invokes a text editor to allow you to edit a crontab
+file. Entering crontab “minus e” on the command
+line opens the default text editor. Using the editor, you can specify a new schedule
+and a command, which has the following syntax: “command” can be any shell command, including
+a call to a shell script. The symbols stand for minute, hour, day of
+month, month, and day of week. All five positions must have either a numeric
+entry or an asterisk, which is a wildcard symbol that means “any.” For example,
+the following syntax means: append the current date to the file ‘sundays.txt’ at
+15:30 every Sunday. Closing the editor and saving the changes
+adds the job to the cron table. Let's take a closer look at each of these
+steps. Entering crontab “minus e” on the command
+line opens the default text editor. In this case, the default editor is GNU nano. Conveniently,
+instructions for setting up cron jobs are included here as comments. Instructions
+for using the editor are also included, but you likely will only need “control
+x” in this context. Here I have entered three example cron jobs. Notice that extra
+spaces are ignored, so to improve the readability you can align your
+entries as columns under the header. The first entry instructs cron to append
+the current date to the file ‘sundays.txt,’ at 15:30 every Sunday. The next line specifies
+a “load data” shell script to run at midnight every day,
+while The last line results in cron running the
+“backup” data shell script to run at 2 AM on Sundays. To save the job, first type
+“control x” to exit the editor, and then enter “y”
+to save your changes. The jobs are now in production! Running crontab with the “l”
+option returns a list of all cron jobs and their schedules.
+I used “tail” to avoid returning all of the comments from the crontab file. To remove
+a job,   simply invoke the crontab editor, delete the corresponding line in the
+crontab file, and save the changes. In this video, you learned that: Cron jobs can be
+scheduled to run periodically at selected times. Cron, Crond,
+and Crontab have different functions. Entering crontab "minus e" on the command line
+opens the default text editor. Running crontab with the "l" option returns
+a list of all cron jobs and their schedules
