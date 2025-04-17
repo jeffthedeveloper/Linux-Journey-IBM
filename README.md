@@ -130,21 +130,3 @@
   <p><em>Part of IBM's Professional Certificate Series in Data Engineering and Open Source Technologies</em></p>
 </div>
 
-
-<style>
-  h1, h2, h3 {
-    color: #0062ff;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  img {
-    max-width: 100%;
-  }
-</style>
-
