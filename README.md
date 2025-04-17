@@ -1,20 +1,20 @@
 # README - Hands-on Introduction to Linux Commands and Shell Scripting
 
 
-<div align="center">
-  <img src="Course-Logo-And-Title.png" alt="IBM Course Logo" width="20%">
-  <h1>Hands-on Introduction to Linux Commands and Shell Scripting</h1>
-  <p>IBM Professional Certificate | Coursera</p>
+<div align="center" style="font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px;">
+  <img src="Course-Logo-And-Title.png" alt="IBM Course Logo" style="width: 20%;">
+  <h1 style="color: #0062ff;">Hands-on Introduction to Linux Commands and Shell Scripting</h1>
+  <p style="line-height: 1.6;">IBM Professional Certificate | Coursera</p>
 </div>
 
 
-## 📜 Certificate of Completion
+<h2 style="color: #0062ff;">📜 Certificate of Completion</h2>
 <div align="center">
-  <img src="LINUX-CERTIFICATE.jpg" alt="Linux Certification" height="100%" width="100%">
+  <img src="LINUX-CERTIFICATE.jpg" alt="Linux Certification" style="width: 100%;">
 </div>
 
-## 🚀 About the Course
-<div style="display: flex; align-items: center; margin: 20px 0;">
+<div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto;">
+<h2 style="color: #0062ff;">🚀 About the Course</h2>
   
   <div>
     <p>This comprehensive Linux course, offered by IBM on Coursera, provides hands-on experience with essential Linux commands and shell scripting techniques. The curriculum covers:</p>
